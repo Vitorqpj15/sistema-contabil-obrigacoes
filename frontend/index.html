@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>🥗 NutriTrack</h1>
+    <p>Controle sua alimentação diária</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>📋 Cadastrar Alimento</h2>
+      <p class="descricao">Adicione um alimento ao sistema com suas calorias por 100g</p>
+
+      <div class="form-group">
+        <input 
+          type="text" 
+          id="nomeAlimento" 
+          placeholder="Nome do alimento (ex: Arroz cozido)"
+        >
+        <input 
+          type="number" 
+          id="caloriasAlimento" 
+          placeholder="Calorias por 100g (ex: 130)"
+        >
+        <button onclick="cadastrarAlimento()">Cadastrar</button>
+      </div>
+
+      <p id="msgCadastro" class="mensagem"></p>
+    </section>
+
+    <section class="card">
+      <h2>🍽️ Registrar Consumo</h2>
+      <p class="descricao">Selecione o alimento e informe a quantidade consumida</p>
+
+      <div class="form-group">
+    
+        <select id="selectAlimento">
+          <option value="">Carregando alimentos...</option>
+        </select>
+        <input 
+          type="number" 
+          id="quantidade" 
+          placeholder="Quantidade em gramas (ex: 200)"
+        >
+        <button onclick="registrarConsumo()">Registrar</button>
+      </div>
+
+      <p id="msgRegistro" class="mensagem"></p>
+    </section>
+
+
+    <section class="card">
+      <h2>📊 Consumo de Hoje</h2>
+      <p class="descricao">Resumo do que você consumiu hoje</p>
+
+    
+      <table id="tabelaRegistros">
+        <thead>
+          <tr>
+            <th>Alimento</th>
+            <th>Quantidade</th>
+            <th>Calorias</th>
+          </tr>
+        </thead>
+        <tbody id="corpoTabela">
+
+        </tbody>
+      </table>
+
+      <div class="total">
+        <span>Total do dia:</span>
+        <span id="totalCalorias">0 kcal</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
