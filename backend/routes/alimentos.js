@@ -15,6 +15,8 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
 
+console.log("📥 Recebi uma tentativa de POST!"); // Adicione isso aqui
+  console.log("Corpo da requisição:", req.body);  // E isso aqui
   const { nome, calorias_por_100g } = req.body;
 
   try {
@@ -24,7 +26,8 @@ router.post('/', async (req, res) => {
     );
     res.status(201).json(resultado.rows[0]);
   } catch (erro) {
-    res.status(500).json({ erro: erro.message });
+    console.log('ERRO COMPLETO:', erro); 
+    res.status(500).json({ erro: erro.message, detalhe: erro });
   }
 });
 
