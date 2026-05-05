@@ -1,0 +1,26 @@
+{
+  "name": "sistema-contabil-obrigacoes",
+  "version": "1.0.0",
+  "description": "O NutriTrack é uma aplicação web desenvolvida para auxiliar no controle e análise da ingestão diária de alimentos, com foco em organização de dados e acompanhamento de metas calóricas.\r O sistema permite registrar alimentos consumidos, calcular automaticamente o total de calorias e fornecer insights sobre o comportamento alimentar ao longo do tempo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitorqpj15/sistema-contabil-obrigacoes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vitorqpj15/sistema-contabil-obrigacoes/issues"
+  },
+  "homepage": "https://github.com/Vitorqpj15/sistema-contabil-obrigacoes#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.20.0"
+  }
+}
