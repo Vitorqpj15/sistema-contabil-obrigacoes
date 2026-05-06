@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriTrack</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+  <!-- IMAGEM DE FUNDO -->
+  <div class="bg"></div>
+
+  <!-- HEADER -->
+  <header class="auth-header">
+    <h1>NutriTrack</h1>
+  </header>
+
+  <!-- CONTAINER DOS DOIS CARDS -->
+  <main class="auth-main">
+
+    <!-- CARD ESQUERDO — LOGIN -->
+    <div class="card-dark">
+      <h2>NutriTrack</h2>
+      <p class="boas-vindas"><strong>Bem-vindo<br>de volta!</strong></p>
+      <p class="sub">acesse sua conta agora mesmo.</p>
+
+      <div class="form-group">
+        <input type="email" id="emailLogin" placeholder="Email">
+        <input type="password" id="senhaLogin" placeholder="Senha">
+      </div>
+
+      <button class="btn-dark" onclick="fazerLogin()">ENTRAR</button>
+      <p id="msgLogin" class="mensagem"></p>
+      <a href="#" class="link-esqueci">esqueci minha senha</a>
+    </div>
+
+    <!-- CARD DIREITO — CADASTRO -->
+    <div class="card-light">
+      <h2>Crie sua conta</h2>
+      <p class="sub-light">Preencha seus dados</p>
+
+      <div class="form-group">
+        <input type="text" id="nomeRegistro" placeholder="Nome completo">
+        <input type="email" id="emailRegistro" placeholder="Email">
+        <input type="password" id="senhaRegistro" placeholder="Senha">
+        <input type="password" id="confirmarSenha" placeholder="Confirmar senha">
+      </div>
+
+      <button class="btn-light" onclick="irParaDadosFisicos()">CADASTRAR</button>
+      <p id="msgRegistro" class="mensagem"></p>
+    </div>
+
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
