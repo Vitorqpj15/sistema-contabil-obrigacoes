@@ -9,7 +9,6 @@ const pool = new Pool({
   database: process.env.DB_NAME,
 });
 
-// Teste de conexão — vamos ver se consegue falar com o banco
 pool.connect((err, client, release) => {
   if (err) {
     console.log('ERRO NA CONEXÃO:', err.message);
